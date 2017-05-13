@@ -127,6 +127,8 @@ img.hero{
 .hero-div {
   background-size: cover;
   background: url("../images/hero_background.png");
+  background-position-x: center;
+  background-position-y: top;
   height: 18em;
   margin-bottom: 5em;
 }
@@ -141,6 +143,10 @@ img.hero{
   left: 2.8em;
   background: white;
   padding: 20px 20px 20px 20px;
+}
+
+.title-above-image {
+  display: none;
 }
 
 /* 
@@ -226,7 +232,7 @@ max-width: 1200px;
 }
 
 
-/* 
+/*
   .footer-copyright
 {
   text-align: left;
@@ -328,10 +334,10 @@ svg.airplane  {
   height: auto;
 }
 
-/* 
--------------- 
-    FOOTER 
--------------- 
+/*
+--------------
+    FOOTER
+--------------
 */
 
 footer  {
@@ -360,10 +366,10 @@ footer ul {
   -webkit-padding-start: 0px;
 }
 
-/* 
+/*
 ----------------------
 FOR SMALLER SCEENS
----------------------- 
+----------------------
 */
 
 @media (max-width: 960px) {
@@ -373,12 +379,23 @@ FOR SMALLER SCEENS
       margin-bottom: -5px;
     }
 
+    .hero-div {
+      margin-top: 0em;
+    }
+
     .hero-div h1 {
-    top: auto;
+      display: none;
+ /*   top: auto;
     left: auto;
     padding: 0 0 10px 0;
     text-align: center;
-    position: static;
+    position: static;*/
+    }
+
+    .title-above-image {
+      display: inherit;
+      text-align: center;
+      padding-right: 100px;
     }
 
     header ul {
